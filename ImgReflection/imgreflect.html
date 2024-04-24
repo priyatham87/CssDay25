@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Img Reflection</title>
+    <style>
+        img
+        {
+            position: absolute;
+            left: 500px;  
+        }
+        .img:hover
+        {
+            -webkit-box-reflect: left 40px;
+
+        }
+        .img1
+        {
+            position: absolute;
+            left: 500px;  
+            top: 350px;
+
+        }
+        .img1:hover
+        {
+            -webkit-box-reflect: right 40px;
+
+        }
+        .img2
+        {
+            position: absolute;
+            left: 10px;  
+            top: 350px;
+
+        }
+        .img2:hover
+        {
+            -webkit-box-reflect: above 40px;
+
+        }
+        .img3
+        {
+            position: absolute;
+            left: 1000px;  
+            top: 350px;
+
+        }
+        .img3:hover
+        {
+            -webkit-box-reflect: below 40px;
+
+        }
+        body
+        {
+            background-color: lightblue;
+        }
+        h1
+        {
+            color: rgb(128, 38, 0);
+        }
+    </style>
+</head>
+<body>
+   <center> <h1>Image Reflection In Above Below Left And Left</h1></center>
+    <img src="./p9.jpg" width="200px" height="200px" class="img">
+    <br>
+    <img src="./p10.jpg" width="200px" height="200px" class="img1">
+    <br>
+    <img src="./p11.jpg" width="200px" height="200px" class="img2">
+    <br>
+    <img src="./p12.jpg" width="200px" height="200px" class="img3">
+    
+</body>
+</html>
