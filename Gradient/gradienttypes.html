@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Types</title>
+    <style>
+        .linear
+        {
+            width: 1000px;
+            height: 400px;
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: cornsilk;
+            margin-left: 200px;
+            margin-bottom: 100px;
+            
+        }
+        .radial
+        {
+            width: 1000px;
+            height: 300px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            margin-left: 200px;
+            animation-name: water;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+          
+        }
+        @keyframes water 
+        {
+            0%
+            {
+                background-image:repeating-radial-gradient( white 10%,skyblue 20%,blue 5%);
+            }
+            25%
+            {
+                background-image:repeating-radial-gradient( white 15%,skyblue 30%,blue 10%);
+            }
+            75%
+            {
+                background-image:repeating-radial-gradient( white 20%,skyblue 40%,blue 25%);
+            }
+            100%
+            {
+                background-image:repeating-radial-gradient( white 25%,skyblue 50%,blue 5%);
+            }
+        }
+        h1
+        {
+            color: brown;
+        }
+        h2, h3
+        {
+            text-align: center;
+            color: goldenrod;
+            font-size: 45px;
+        }
+        .conical
+        {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg,blue 360deg);
+           
+           
+        }
+        .cone
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+        li
+        {
+            list-style-type: square;
+            font-size: 40px;
+        }
+        li:nth-child(1)
+        {
+            color: red;
+        }
+        li:nth-child(2)
+        {
+            color: yellow;
+        }
+        li:nth-child(3)
+        {
+            color: green;
+        }
+        li:nth-child(4)
+        {
+            color: blue;
+        }
+        body
+        {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Gradient Types</h1>
+        <h2>Linear Gradient</h2>
+    </center>
+    <div class="linear">RainBow</div>
+    <h3>Radial</h3>
+    <div class="radial"></div>
+    <h3>Conical</h3>
+<header class="cone">
+    <div class="conical"></div>
+<div>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>SQL</li>
+    </ul>
+</div>
+</header>
+
+    
+</body>
+</html>
