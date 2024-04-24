@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties</title>
+    <style>
+        .architect
+        {
+            width: 100%;
+            height: 600px;
+            background-image: url(./architect.jpg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .architect span
+        {
+            background-color: black;
+            color: white;
+        }
+        .house1
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house2.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .house2
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house3.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .house3
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house4.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .house4
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house4.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .house5
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house3.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .house6
+        {
+            width: 300px;
+            height: 300px;
+            background-image: url(./house2.jpg);
+            background-size: 300px 300px;
+            position: relative;
+        }
+        .names,.names2,.names3,.names4,.names5,.names6
+        {
+            position: absolute;
+            background-color: black;
+            color: white;
+            left: 0px;
+            top: 0px;
+        }
+        .houses
+        {
+           display: grid;
+           grid-template-columns: auto auto auto;
+           grid-template-rows: auto auto auto;
+          row-gap: 20px;
+          margin-left: 100px;
+        }
+        body
+        {
+            background-color: lightblue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="architect">
+        <span>BR ARCHITECT</span>
+    </div>
+    <div class="houses">
+        <div class="house1">
+            <div class="names">House1</div>
+        </div>
+        <div class="house2">
+            <div class="names2">House2</div>
+        </div>
+        <div class="house3">
+            <div class="names3">House3</div>
+        </div>
+        <div class="house4">
+            <div class="names4">House4</div>
+        </div>
+        <div class="house5">
+            <div class="names5">House5</div>
+        </div>
+        <div class="house6">
+            <div class="names6">House6</div>
+        </div>
+    </div>
+    
+</body>
+</html>
